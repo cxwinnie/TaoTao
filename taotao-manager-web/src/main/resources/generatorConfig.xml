@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--
+        <properties resource="conn.properties" />
+          -->
+
+    <classPathEntry location="D:\important\jar\mysql\mysql-connector-java-5.1.12-bin.jar"/>
+    <!-- 指定运行环境是mybatis3的版本 -->
+    <context id="testTables" targetRuntime="MyBatis3">
+
+        <commentGenerator>
+            <!-- 是否取消注释 -->
+            <property name="suppressAllComments" value="true"/>
+            <!-- 是否生成注释代时间戳 -->
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!-- jdbc 连接信息 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/taotao?useUnicode=true&amp;characterEncoding=UTF-8"
+                        userId="root" password="123456">
+        </jdbcConnection>
+
+        <!-- targetPackage指定模型在生成在哪个包 ,targetProject指定项目的src,-->
+        <javaModelGenerator targetPackage="com.taotao.entity"
+                            targetProject="../taotao-manager-entity/src/main/java">
+            <!-- 去除字段前后空格 -->
+            <property name="trimStrings" value="false"/>
+        </javaModelGenerator>
+        <!-- 配置SQL映射文件生成信息 -->
+        <sqlMapGenerator targetPackage="com.taotao.mapper"
+                         targetProject="../taotao-manager-dao/src/main/java"/>
+        <!--配置dao接口生成信息-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.taotao.dao"
+                             targetProject="../taotao-manager-dao/src/main/java"/>
+
+        <!-- 指定数据库表 -->
+        <table tableName="tb_content" domainObjectName="TbContent"></table>
+        <table tableName="tb_content_category" domainObjectName="TbContentCategory"></table>
+        <table tableName="tb_item" domainObjectName="TbItem"></table>
+        <table tableName="tb_item_cat" domainObjectName="TbItemCat"></table>
+        <table tableName="tb_item_desc" domainObjectName="TbItemDesc"></table>
+        <table tableName="tb_item_param" domainObjectName="TbItemParam"></table>
+        <table tableName="tb_item_param_item" domainObjectName="TbItemParamItem"></table>
+        <table tableName="tb_order" domainObjectName="TbOrder"></table>
+        <table tableName="tb_order_item" domainObjectName="TbOrderItem"></table>
+        <table tableName="tb_order_shipping" domainObjectName="TbOrderShipping"></table>
+        <table tableName="tb_user" domainObjectName="TbUser"></table>
+
+    </context>
+</generatorConfiguration>
