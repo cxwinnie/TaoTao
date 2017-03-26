@@ -6,7 +6,7 @@
 <typeAliases>
 		<!-- <typeAlias type="cn.xuxianda.entity.Dept" alias="Dept" /> -->
 		
-		<package name="cn.taotao.entity"/>
+		<package name="com.taotao.entity"/>
 </typeAliases>
 
 	<!-- <mappers>
