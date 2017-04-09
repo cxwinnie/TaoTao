@@ -19,4 +19,8 @@
       select t.* from tb_item t where t.id = #{id}
   </select>
 
+  <select id="getAll"  resultMap="BaseResultMap">
+    select t.* from tb_item t
+  </select>
+
 </mapper>

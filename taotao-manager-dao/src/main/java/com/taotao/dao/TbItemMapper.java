@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface TbItemMapper {
     List<TbItem> getById(Long id);
+
+    List<TbItem> getAll(TbItem tbItem);
 }

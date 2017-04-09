@@ -1,5 +1,6 @@
 package com.taotao.service;
 
+import com.taotao.common.entity.EasyUIDataGridResult;
 import com.taotao.entity.TbItem;
 
 import java.util.List;
@@ -9,4 +10,5 @@ import java.util.List;
  */
 public interface TbItemService {
     List<TbItem> getById(Long id);
+    EasyUIDataGridResult getTbItemList(int index, int row);
 }

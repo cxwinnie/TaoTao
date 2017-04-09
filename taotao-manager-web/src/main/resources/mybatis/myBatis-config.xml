@@ -1,17 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
-<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 <!-- 通过别名简化对类的使用 -->
 <typeAliases>
 		<!-- <typeAlias type="cn.xuxianda.entity.Dept" alias="Dept" /> -->
-		
+
 		<package name="com.taotao.entity"/>
 </typeAliases>
 
 	<!-- <mappers>
 		<mapper resource="cn/xuxianda/entity/DeptMapper.xml" />
 	</mappers> -->
-	
-		
+
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="" value=""></property>
+        </plugin>
+    </plugins>
+
 </configuration>
