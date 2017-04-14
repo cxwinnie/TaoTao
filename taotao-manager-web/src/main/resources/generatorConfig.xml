@@ -38,17 +38,17 @@
                              targetProject="../taotao-manager-dao/src/main/java"/>
 
         <!-- 指定数据库表 -->
-        <table tableName="tb_content" domainObjectName="TbContent"></table>
+<!--        <table tableName="tb_content" domainObjectName="TbContent"></table>
         <table tableName="tb_content_category" domainObjectName="TbContentCategory"></table>
-        <table tableName="tb_item" domainObjectName="TbItem"></table>
+        <table tableName="tb_item" domainObjectName="TbItem"></table>-->
         <table tableName="tb_item_cat" domainObjectName="TbItemCat"></table>
-        <table tableName="tb_item_desc" domainObjectName="TbItemDesc"></table>
+<!--        <table tableName="tb_item_desc" domainObjectName="TbItemDesc"></table>
         <table tableName="tb_item_param" domainObjectName="TbItemParam"></table>
         <table tableName="tb_item_param_item" domainObjectName="TbItemParamItem"></table>
         <table tableName="tb_order" domainObjectName="TbOrder"></table>
         <table tableName="tb_order_item" domainObjectName="TbOrderItem"></table>
         <table tableName="tb_order_shipping" domainObjectName="TbOrderShipping"></table>
-        <table tableName="tb_user" domainObjectName="TbUser"></table>
+        <table tableName="tb_user" domainObjectName="TbUser"></table>-->
 
     </context>
 </generatorConfiguration>
