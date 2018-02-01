@@ -68,5 +68,15 @@
             <artifactId>jsp-api</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>fastdfs-client-java</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.25</version>
+        </dependency>
+        <dependency>
+            <groupId>fastdfs-client-java</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.25</version>
+        </dependency>
     </dependencies>
 </project>
